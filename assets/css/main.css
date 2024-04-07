@@ -1,0 +1,25 @@
+.mask {
+  -webkit-mask-image: url(/img/user.png);
+  mask-image: url(/img/user.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+.blur-enter-active,
+.blur-leave-active {
+  transition: all 0.4s;
+}
+.blur-enter-from,
+.blur-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.4s;
+}
+.slide-enter-from,
+.slide-leave-to {
+  filter: grayscale(1);
+}
